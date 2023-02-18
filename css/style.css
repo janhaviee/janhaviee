@@ -152,6 +152,50 @@ header .nav-logo span {
 }
 
 .hero img {
+    height: 500px;
     width: 500px;
     border-radius: 100%;
+}
+
+@media screen and (max-width:992px) {
+    .hero .container {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+    }
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about img {
+    height: 500px;
+    width: 500px;
+
+}
+
+.about .content {
+    max-width: 600px;
+    display: grid;
+    gap: 1rem;
+}
+
+.about .content h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .about {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
 }
